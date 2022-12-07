@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:cover;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.santa-image{
+    position: absolute;
+    top:35%;
+    left: 100px;
+}
+.hand{
+    transform: rotate(1deg);
+    animation: wave 1.5s infinite;
+    transform-origin: center;	
+}
+@keyframes wave{
+    50%{
+        transform: rotate(-15deg);
+    }
+}
+
+.snowflake{
+    color: #fff;
+    margin: 0;
+    display: flex;
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 1000px;
+    height: 100vh;
+}
+
+.text {
+    display: none;
+    width: 80px;
+    height: 40px;
+    position:absolute;
+    top:0;
+    right:50%;
+}
+.text h1 {
+    font-size: 7rem;
+    text-align: center;
+    font-weight: bold;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 15px #00fff2;
+    }
+    to {
+        color: rgb(254, 236, 236);
+        text-shadow: 0 0 15px #f7433d;
+    }
+}
+
+.gift-box{
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+
+}
